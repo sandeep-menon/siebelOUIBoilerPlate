@@ -4,9 +4,9 @@ body{
 
 .form{
     text-align: center;
-    background: #56569e;
+    background: #9e9edb;
     border-radius: 20px;
-    color: #f4ecd8;
+    color: black;
     margin: 2%;
     padding: 5%;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -26,6 +26,11 @@ body{
     text-align: center;
 }
 
+#type_select{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: 200px;
+}
+
 #form_name{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     text-align: center;
@@ -42,8 +47,14 @@ body{
 }
 
 #name_input{
-    min-width: 200px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    min-width: 300px;
     outline: none;
+}
+
+#js_type_select{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: 200px;
 }
 
 #btn_gen{
@@ -92,6 +103,7 @@ body{
     transition: 0s
 }
 
+/*jQuery Dialog customization*/
 .no-close .ui-dialog-titlebar-close {
     display: none;
 }
@@ -100,8 +112,13 @@ body{
     background-color: #dadada !important;
 }
 
+.ui-button{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
+    font-size: 18px !important;    
+    padding-left:10px !important;
+    padding-right:10px !important;
+}
 
-.ui-button .ui-corner-all .ui-widget{
-    padding-left:10px;
-    padding-right:10px;
+.ui-dialog-titlebar{
+    background: darkblue !important;
 }
