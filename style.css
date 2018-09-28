@@ -1,0 +1,98 @@
+body{
+    background-color: #f4ecd8;
+}
+
+.title{
+    text-align: center;
+    background: darkblue;
+    border-radius: 20px;
+    color: #f4ecd8;
+    margin: 5%;
+    padding: 1%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#form_type{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+}
+
+#form_name{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+}
+
+#form_js_type{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+}
+
+#form_comments{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+}
+
+#name_input{
+    min-width: 200px;
+    outline: none;
+}
+
+#btn_gen{
+    text-align: center;
+}
+
+.btn-gen{
+    background-color: white;
+    border: 2px solid #555555;
+    color: black;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+.btn-gen:hover{
+    background-color: #555555;
+    color: white;
+}
+
+.btn-gen:after{
+    content: "";
+    background: #f1f1f1;
+    display: block;
+    position: absolute;
+    padding-top: 300%;
+    padding-left: 350%;
+    margin-left: -20px !important;
+    margin-top: -120%;
+    opacity: 0;
+    transition: all 0.8s
+}
+
+.btn-gen:active:after{
+    padding: 0;
+    margin: 0;
+    opacity: 1;
+    transition: 0s
+}
+
+.no-close .ui-dialog-titlebar-close {
+    display: none;
+}
+
+.ui-widget-content{
+    background-color: #dadada !important;
+}
+
+
+.ui-button .ui-corner-all .ui-widget{
+    padding-left:10px;
+    padding-right:10px;
+}

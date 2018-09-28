@@ -1,0 +1,64 @@
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="artifacts/jquery.min.js"></script>
+        <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="codemirror.css">
+        <link href = "https://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css" rel = "stylesheet">
+        <script src="script.js"></script>
+        <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+        <!--Including CodeMirror files-->
+        <script src="plugin/codemirror/addon/selection/active-line.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript" src="plugin/codemirror/lib/codemirror.js"></script>
+		<script type="text/javascript" src="js/default.js"></script>
+		<script src="plugin/codemirror/mode/javascript/javascript.js" type="text/javascript" charset="utf-8"></script>
+        <title>Siebel Open UI Boiler Plate Generator</title>
+        <h1 class='title'>Siebel Open UI Boiler Plate Generator</h1>
+    </head>
+    <body>
+        <div id='form_type'>
+            <strong>Type:</strong>
+            <select id='type_select' width='200px' required>
+                <option value='Default' selected hidden>Please select Type of object...</option>
+                <option value='FormApplet'>Form Applet</option>
+                <option value='ListApplet'>List Applet</option>
+                <option value='View'>View</option>
+            </select>
+        </div>
+        <br>
+        <div id='form_name'>
+            <strong>Name:</strong>
+            <input id='name_input' width="500px" placeholder="Enter Object Name" onkeypress="this.style.width = ((this.value.length + 1) * 8) + 'px';">
+        </div>
+        <br>
+        <div id='form_js_type'>
+            <strong>PM or PR?</strong>
+            <select id='js_type_select'>
+                <option value='Default' selected hidden>Please select PM or PR</option>
+                <option value='PM'>PM</option>
+                <option value='PR'>PR</option>
+            </select>
+        </div>
+        <br>
+        <div id='form_comments'>
+            <strong>With Flower Box?</strong>
+            <input id='flowerbox_check' type='checkbox'>
+            <br><br>
+            <strong>With Comments?</strong>
+            <input id='comments_check' type='checkbox'>
+        </div>
+        <br><br><br>
+        <div id='btn_gen'>
+            <button id='genButton' class='btn-gen' onclick='startGen()'>Generate!</button>
+        </div>
+        <br><br><br>
+        <div id='dialog-1' title='Error'></div>
+        <div id='result'>
+            <textarea class="codemirror-textarea"></textarea>
+        </div>
+    </body>
+</html>
