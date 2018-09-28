@@ -286,7 +286,7 @@ function genCode(objectName, comments){
             code = code.replace(/JSType/g, 'ViewPR');
         }
     }
-	code += '// Generated using https://sandeep-menon.github.io/siebelOUIBoilerPlate/ ';
+	code += '\n\n// Generated using https://sandeep-menon.github.io/siebelOUIBoilerPlate/ ';
     return code;
 }
 
