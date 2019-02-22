@@ -22,6 +22,14 @@ function init(){
             }
         ]
     });
+	$("#type_select").on("change", function(){
+		if($('option:selected', this).text() == "View")
+		{
+			$("#PM").hide();	
+		} else {
+			$("#PM").show();
+		}
+	});
 }
 
 function jQDiag(type){
