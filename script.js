@@ -261,13 +261,17 @@ function genCode(objectName, comments){
         
         if(comments){
             code += '\t\t\t\t\t// EndLife is where we perform any required cleanup.\n'+
-                    '\t\t\t\t\t// Add code here that should happen before default processing\n';
+                    '\t\t\t\t\t// Add code here that should happen before default processing\n'+
+                    '\t\t\t\t\tsetTimeout(function(){\n'+
+                    '\t\t\t\t\t\t// Make server calls here for e.g., reset profile attributes\n'+
+                    '\t\t\t\t\t\t\n'+
+                    '\t\t\t\t\t},0);\n';
         }
 
         code += '\t\t\t\t\tSiebelAppFacade.OBJECTNAMEPR.superclass.EndLife.apply(this, arguments);\n';
 
         if(comments){
-            code += '\t\t\t\t\t// Add code here that should happen after default processing\n';
+            code += '\t\t\t\t\t// !!!! Do not add any server calls after this point\n';
         }
 
         code += '\t\t\t\t}\n'+
